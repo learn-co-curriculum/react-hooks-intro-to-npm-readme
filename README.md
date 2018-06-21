@@ -1,6 +1,6 @@
 # Intro to NPM
 
-## Problem Statement
+## Overview
 
 JavaScript has been around for many years now, and continues to serve as a
 critical part of the modern, interactive web. There are web developers all over
