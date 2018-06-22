@@ -1,6 +1,6 @@
 # Intro to NPM
 
-## Overview
+## Problem Statement
 
 JavaScript has been around for many years now, and continues to serve as a
 critical part of the modern, interactive web. There are web developers all over
@@ -64,9 +64,6 @@ or, for short:
 ```sh
 npm install -g npm
 ```
-
-**Note:** If you are using the in-browser Learn IDE, you already have node and npm
-configured, but will not be able to update global packages.
 
 Okay, so what is npm exactly?
 
