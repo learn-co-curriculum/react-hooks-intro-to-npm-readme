@@ -7,6 +7,7 @@
     "test": "echo 'hot dog'"
   },
   "dependencies": {
+    "isnumber": "^1.0.0",
     "learn-browser": "^0.1.17"
   },
   "repository": {
