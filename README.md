@@ -108,27 +108,30 @@ The `package.json` file tells you (and `npm`) everything about what packages are
 required for a specific JavaScript application, listing out each package name.
 
 When we run the command `npm install` in a directory where a `package.json` file
-is present, `npm` reads the names of each dependency and downloads the packages
-from [npmjs.com][npmjs], where they are hosted. It then begins installing those
-packages - _BUT!_ those packages also have _their own_ `package.json` with their
-own dependencies! `npm` must also get those packages, and if _those packages_
-have any dependencies, get them as well. So on and so on. This is what we refer
-to as a _dependency tree_.
+is present, `npm` reads the names of each dependency from the `package.json`
+file and downloads the packages from [npmjs.com][npmjs], where they are hosted.
+It then begins installing those packages - _BUT!_ those packages also have
+_their own_ `package.json` with their own dependencies! `npm` must also get
+those packages, and if _those packages_ have any dependencies, get them as well.
+So on and so on. This is what we refer to as a _dependency tree_.
 
-If you are working in a local environment, it is also built in to the `learn`
-command. Running `npm install` creates a folder called `node_modules`, which
-contains all the downloaded packages.
+If you are working in a local environment running `npm install` creates a folder
+called `node_modules`, which contains all the downloaded packages. _Note_: the
+`learn` gem may automatically run `npm install` when you fork a new lesson with
+it.
 
-When building a project from scratch, as you build it, you may realize you
-_need_ some specific package. Running `npm install` while inside a project
-directory _will not work_ unless there is a correctly structured `package.json`
-file present.
+When building a project from scratch, you may realize you _need_ some specific
+package. We can install packages by running `npm install <package_name>` while
+inside a project directory. If you do not have a correctly structured
+`package.json` file, the install _will not work_!
+
 
 ## A Little More on `package.json`
 
-The `package.json` is a key part of sharing JS code repositories on sites like
-GitHub.  Instead of having to bundle all the `node_modules` with every project,
-we just include a small file, listing out what npm needs to get for the project.
+The `package.json` file is a key part of sharing JS code repositories on sites
+like GitHub. Instead of having to include all the dependencies' code with every
+project, we just include a small file, listing out what npm needs to get for the
+project.
 
 The file also typically includes information about the project, such as the
 name, version, author and license.
@@ -163,7 +166,12 @@ example:
 ```
 
 In your terminal, if you are in a directory with the above `package.json` file
-present, running `npm test` will return "hot dog." This lesson actually does include this `package.json` file, so try it for yourself!
+present, running `npm test` will return "hot dog." This lesson actually does
+include this `package.json` file, so try it for yourself! 
+
+This works because the command `npm test` is saying: "Hey npm, look in
+`package.json` and find the script with the name of 'test', then execute its
+value in the terminal."
 
 Having this file present also means it is possible to install additional packages.  There is one dependency already included:
 
@@ -182,25 +190,29 @@ Running something like `npm install react` will add a second dependency:
 }
 ```
 
+Try it now! Following, take a look to see just how many dependencies (which
+React relies on) have been added to your `node_modules` directory.
+
+
 ## `npm init`
 
 Since npm relies on a `package.json` file, it has a built in command to _build_
 `package.json` files. Running `npm init` on the command line will begin a series
-of prompts, asking about specific content to included in the file. At the end,
-it will create a file or edit an existing `package.json` file. Very handy when
-you are creating your own projects from scratch!
+of prompts, asking about specific content to include in the file. At the end, it
+will create a file or edit an existing `package.json` file. Very handy when you
+are creating your own projects from scratch!
+
 
 #### Key Terms
 
-- npm - Node Package Manager, a command line tool for handling packages of reusable
-JavaScript code
-- Node - Node is a JavaScript runtime, allowing JavaScript to be run in a computer
-terminal, instead of in a browser
+- npm - Node Package Manager, a command line tool for handling packages of reusable JavaScript code
+- Node - Node is a JavaScript runtime, allowing JavaScript to be run locally on your computer, instead of in a browser
+
 
 ## Conclusion
 
 For all advanced JavaScript lessons, including React and Redux, we rely on npm
-to set up a lot of things 'under the hood.' The applications we build are made
+to set up a lot of things 'under the hood'. The applications we build are made
 possible by the contributions of thousands of other coders before us!
 
 **Remember!** While endlessly fun, programming is a means to an ends: we have a
