@@ -101,7 +101,7 @@ All JavaScript labs on Learn.co rely on npm packages for their tests. Many use t
 `learn-browser` npm package, which is built using hundreds of supporting
 packages, including the test framework, [Mocha][mocha].
 
-The lessons themselves don't actually contain all of these packages code.
+The lessons themselves don't actually contain all of these packages' code.
 Instead, they contain a list of _dependencies_ in a file called `package.json`.
 
 The `package.json` file tells you (and `npm`) everything about what packages are
