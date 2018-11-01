@@ -215,7 +215,7 @@ For all advanced JavaScript lessons, including React and Redux, we rely on npm
 to set up a lot of things 'under the hood'. The applications we build are made
 possible by the contributions of thousands of other coders before us!
 
-**Remember!** While endlessly fun, programming is a means to an ends: we have a
+**Remember!** While endlessly fun, programming is a means to an end: we have a
 problem/our employer has a problem, and we give the computer instructions to
 crush the problem. If available, open, and secure code already exists do not
 hesitate to use it! Compared to physical goods, code snippets have less value
