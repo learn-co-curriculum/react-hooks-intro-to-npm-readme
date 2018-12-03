@@ -208,7 +208,6 @@ are creating your own projects from scratch!
 - npm - Node Package Manager, a command line tool for handling packages of reusable JavaScript code
 - Node - Node is a JavaScript runtime, allowing JavaScript to be run locally on your computer, instead of in a browser
 
-
 ## Conclusion
 
 For all advanced JavaScript lessons, including React and Redux, we rely on npm
@@ -229,3 +228,5 @@ sold on [Etsy][etsy]).
 [mocha]: https://mochajs.org/
 [npmjs]: https://www.npmjs.com/
 [etsy]: https://etsy.com
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/intro-to-npm-readme'>Node Package Manager</a> on Learn.co and start learning to code for free.</p>
