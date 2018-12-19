@@ -1,13 +1,11 @@
 # Intro to NPM
 
-
 ## Objectives
 
 - Introduce Node Package Manager (npm)
 - Introduce [npm's online platform][npmjs]
 - Ensure your environment is configured to use npm
 - Review important concepts related to package management in JavaScript
-
 
 ## Introduction
 
@@ -25,13 +23,12 @@ To help organize these packages in relation to our own work, we use _npm_, or
 _Node Package Manager_. In this lesson, we will be discussing how npm works and
 why it is useful.
 
-
 ## The Value of Existing Code
 
 While it is important that you learn the critical skills to problem solve with
 code, it is equally important that we learn how to identify existing code that
 suits our needs and incorporate it into our projects. We don't need to always be
-_reinventing the wheel_ and writing code that may already exist. 
+_reinventing the wheel_ and writing code that may already exist.
 
 In fact, with the amount of developers out in the world, it is likely someone
 else has not only already invented the same wheel, but tested, upgraded and
@@ -42,14 +39,13 @@ Remember, programming is all about providing a solution to a problem. When 'on
 the job', so to speak, no one gets bonus points for concocting a novel/clever
 solution to problem for which good open source code already existed.
 
-
 ## Setting Up Node Package Manager
 
-Before we continue, let's make sure you're environment is all set to work with
+Before we continue, let's make sure your environment is all set to work with
 npm.
 
 npm is automatically installed along with _Node.js_, which should already be
-installed on your system if you've worked through the JavaScript coursework.  To
+installed on your system if you've worked through the JavaScript coursework. To
 confirm you have node installed, enter the following into your command line:
 
 ```sh
@@ -76,7 +72,6 @@ npm install --global npm
 
 Okay, we've got it installed. But what is npm exactly?
 
-
 ## NPM Introduction
 
 As mentioned, npm is a package manager for JavaScript. This means that npm works
@@ -84,7 +79,7 @@ with your JavaScript project directories via the command line, allowing you to
 install packages of preexisting code.
 
 What sort of code? All kinds! Some packages are quite small, like
-[isNumber][isNumber], a package that has one function: to check if a value is a
+[isNumber][isnumber], a package that has one function: to check if a value is a
 number. Some packages are much more complicated. Huge libraries and frameworks,
 including [React][react] and [Express][expjs], are available as npm packages.
 These larger packages are often _themselves_ built using a combination of other
@@ -93,7 +88,6 @@ packages.
 This modular design, the ability to build a package using other packages, allows
 for developers to continuously expand the JavaScript universe, creating new,
 more powerful tools and applications on top of existing, tried and tested code.
-
 
 ## `npm install` and `package.json`
 
@@ -125,7 +119,6 @@ package. We can install packages by running `npm install <package_name>` while
 inside a project directory. If you do not have a correctly structured
 `package.json` file, the install _will not work_!
 
-
 ## A Little More on `package.json`
 
 The `package.json` file is a key part of sharing JS code repositories on sites
@@ -142,38 +135,39 @@ example:
 
 ```json
 {
-  "name": "intro-to-npm-readme",
-  "version": "1.0.0",
-  "description": "An introduction to npm and package.json",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo 'hot dog'"
-  },
-  "dependencies": {
-    "learn-browser": "^0.1.17"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/learn-co-curriculum/intro-to-npm-readme.git"
-  },
-  "author": "flatironschool",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/learn-co-curriculum/intro-to-npm-readme/issues"
-  },
-  "homepage": "https://github.com/learn-co-curriculum/intro-to-npm-readme#readme"
+	"name": "intro-to-npm-readme",
+	"version": "1.0.0",
+	"description": "An introduction to npm and package.json",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo 'hot dog'"
+	},
+	"dependencies": {
+		"learn-browser": "^0.1.17"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/learn-co-curriculum/intro-to-npm-readme.git"
+	},
+	"author": "flatironschool",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/learn-co-curriculum/intro-to-npm-readme/issues"
+	},
+	"homepage":
+		"https://github.com/learn-co-curriculum/intro-to-npm-readme#readme"
 }
 ```
 
 In your terminal, if you are in a directory with the above `package.json` file
 present, running `npm test` will return "hot dog." This lesson actually does
-include this `package.json` file, so try it for yourself! 
+include this `package.json` file, so try it for yourself!
 
 This works because the command `npm test` is saying: "Hey npm, look in
 `package.json` and find the script with the name of 'test', then execute its
 value in the terminal."
 
-Having this file present also means it is possible to install additional packages.  There is one dependency already included:
+Having this file present also means it is possible to install additional packages. There is one dependency already included:
 
 ```json
 "dependencies": {
@@ -193,7 +187,6 @@ Running something like `npm install react` will add a second dependency:
 Try it now! Following, take a look to see just how many dependencies (which
 React relies on) have been added to your `node_modules` directory.
 
-
 ## `npm init`
 
 Since npm relies on a `package.json` file, it has a built in command to _build_
@@ -201,7 +194,6 @@ Since npm relies on a `package.json` file, it has a built in command to _build_
 of prompts, asking about specific content to include in the file. At the end, it
 will create a file or edit an existing `package.json` file. Very handy when you
 are creating your own projects from scratch!
-
 
 #### Key Terms
 
@@ -222,7 +214,7 @@ attributed to novelty (there is a reason you won't see "artisinal code" being
 sold on [Etsy][etsy]).
 
 [nvm]: https://github.com/creationix/nvm
-[isNumber]: https://www.npmjs.com/package/isnumber
+[isnumber]: https://www.npmjs.com/package/isnumber
 [react]: https://www.npmjs.com/package/react
 [expjs]: https://expressjs.com/
 [mocha]: https://mochajs.org/
