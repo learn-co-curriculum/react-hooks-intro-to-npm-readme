@@ -210,7 +210,7 @@ possible by the contributions of thousands of other coders before us!
 problem/our employer has a problem, and we give the computer instructions to
 crush the problem. If available, open, and secure code already exists do not
 hesitate to use it! Compared to physical goods, code snippets have less value
-attributed to novelty (there is a reason you won't see "artisinal code" being
+attributed to novelty (there is a reason you won't see "artisanal code" being
 sold on [Etsy][etsy]).
 
 [nvm]: https://github.com/creationix/nvm
