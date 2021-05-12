@@ -220,5 +220,3 @@ sold on [Etsy][etsy]).
 [mocha]: https://mochajs.org/
 [npmjs]: https://www.npmjs.com/
 [etsy]: https://etsy.com
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/intro-to-npm-readme'>Node Package Manager</a> on Learn.co and start learning to code for free.</p>
