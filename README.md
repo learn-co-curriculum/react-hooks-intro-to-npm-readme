@@ -1,4 +1,4 @@
-# Intro to NPM
+# Intro to npm
 
 ## Learning Goals
 
@@ -212,6 +212,11 @@ crush the problem. If available, open, and secure code already exists do not
 hesitate to use it! Compared to physical goods, code snippets have less value
 attributed to novelty (there is a reason you won't see "artisanal code" being
 sold on [Etsy][etsy]).
+
+## Resources
+
+- [npm][npmjs]
+- [About npm](https://docs.npmjs.com/about-npm)
 
 [npmjs]: https://www.npmjs.com/
 [npm-faq]: https://www.npmjs.com/package/npm#is-npm-an-acronym-for-node-package-manager
