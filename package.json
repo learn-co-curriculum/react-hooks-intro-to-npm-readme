@@ -1,5 +1,5 @@
 {
-  "name": "intro-to-npm-readme",
+  "name": "react-hooks-intro-to-npm-readme",
   "version": "1.0.0",
   "description": "An introduction to npm and package.json",
   "main": "index.js",
@@ -7,17 +7,16 @@
     "test": "echo 'hot dog'"
   },
   "dependencies": {
-    "isnumber": "^1.0.0",
-    "learn-browser": "^0.1.17"
+    "is-number": "^7.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/learn-co-curriculum/intro-to-npm-readme.git"
+    "url": "git+https://github.com/learn-co-curriculum/react-hooks-intro-to-npm-readme.git"
   },
   "author": "flatironschool",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/learn-co-curriculum/intro-to-npm-readme/issues"
+    "url": "https://github.com/learn-co-curriculum/react-hooks-intro-to-npm-readme/issues"
   },
-  "homepage": "https://github.com/learn-co-curriculum/intro-to-npm-readme#readme"
+  "homepage": "https://github.com/learn-co-curriculum/react-hooks-intro-to-npm-readme#readme"
 }
