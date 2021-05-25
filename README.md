@@ -9,6 +9,13 @@
 
 ## Introduction
 
+When using React in our projects, we need to download the actual React code for
+our projects so that we can use it alongside our own JavaScript code. React
+itself is written in JavaScript, and it's an
+[open source library](https://github.com/facebook/react). React itself _also_
+depends on some other open source JavaScript libraries. So how can we use all
+this excellent code ourselves?
+
 JavaScript has been around for many years now, and continues to serve as a
 critical part of the modern, interactive web. There are web developers all over
 the world writing JavaScript code, each contributing their own bits of work.
