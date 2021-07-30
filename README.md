@@ -111,7 +111,7 @@ required for a specific JavaScript application, listing out each package name.
 When we run the command `npm install` in a directory where a `package.json` file
 is present, npm reads the names of each dependency from the `package.json` file
 and downloads the packages from [npmjs.com][npmjs], where they are hosted. It
-then begins installing those packages &mdash; _BUT!_ those packages also have
+then begins installing those packages — _BUT!_ those packages also have
 _their own_ `package.json` with their own dependencies! `npm` must also get
 those packages, and if _those packages_ have any dependencies, get them as well.
 So on and so on. This is what we refer to as a _dependency tree_.
