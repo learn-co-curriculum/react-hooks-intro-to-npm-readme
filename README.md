@@ -2,8 +2,7 @@
 
 ## Learning Goals
 
-- Understand how to use npm to add additional functionality to JavaScript
-  projects
+- Understand how to use npm to add functionality to JavaScript projects
 - Use [npm's online platform][npmjs]
 - Configure your environment to use npm
 
@@ -32,9 +31,9 @@ lesson, we will be discussing how npm works and why it is useful.
 
 ## The Value of Existing Code
 
-While it is important that you learn the critical skills to problem solve with
-code, it is equally important that we learn how to identify existing code that
-suits our needs and incorporate it into our projects. We don't need to always be
+While it is important to learn the critical skills to solve problems with code,
+it is equally important that we learn how to identify existing code that suits
+our needs and incorporate it into our projects. We don't need to always be
 _reinventing the wheel_ and writing code that may already exist.
 
 In fact, with the amount of developers out in the world, it is likely someone
@@ -44,7 +43,7 @@ in a short period of time.
 
 Remember, programming is all about providing a solution to a problem. When 'on
 the job', so to speak, no one gets bonus points for concocting a novel/clever
-solution to a problem for which good open source code already existed.
+solution to a problem for which good open source code already exists.
 
 ## Setting Up Node Package Manager
 
@@ -92,39 +91,43 @@ including [React][react] and [Express][express-js], are available as npm
 packages. These larger packages are often _themselves_ built using a combination
 of other packages.
 
-This modular design, the ability to build a package using other packages, allows
-for developers to continuously expand the JavaScript universe, creating new,
-more powerful tools and applications on top of existing, tried and tested code.
+This modular design — the ability to build a package using other packages —
+allows for developers to continuously expand the JavaScript universe, creating
+new, more powerful tools and applications on top of existing, tried and tested
+code.
 
 ## npm install and package.json
 
 All JavaScript labs at Flatiron rely on npm packages for their tests. Many use
-the `mocha`[mocha] npm package, which is a popular JavaScript testing framework.
+the [`mocha`][mocha] npm package, which is a popular JavaScript testing framework.
 
 The lessons themselves don't actually include all the code from these different
 packages directly in the source code. Instead, they contain a list of
 _dependencies_ in a file called `package.json`.
 
-The `package.json` file tells you (and npm) everything about what packages are
-required for a specific JavaScript application, listing out each package name.
+The `package.json` file tells you (and npm) what packages are required for a
+specific JavaScript application, listing out each package name.
 
 When we run the command `npm install` in a directory where a `package.json` file
 is present, npm reads the names of each dependency from the `package.json` file
 and downloads the packages from [npmjs.com][npmjs], where they are hosted. It
-then begins installing those packages — _BUT!_ those packages also have
-_their own_ `package.json` with their own dependencies! `npm` must also get
-those packages, and if _those packages_ have any dependencies, get them as well.
-So on and so on. This is what we refer to as a _dependency tree_.
+then begins installing those packages — _BUT!_ those packages also have _their
+own_ `package.json` with their own dependencies! `npm` must also get those
+packages, and if _those packages_ have any dependencies, get them as well. And
+so on. This is what we refer to as a _dependency tree_.
 
 If you are working in a local environment, running `npm install` creates a
 folder called `node_modules`, which contains all the downloaded packages.
 _Note_: the `learn` gem may automatically run `npm install` when you first run
 `learn test`.
 
-When building a project from scratch, you may realize you _need_ some specific
-package. We can install packages by running `npm install <package_name>` while
-inside a project directory. If you do not have a correctly structured
-`package.json` file, the install _will not work_!
+When building a project, you may realize you _need_ some specific package. We
+can install packages by running `npm install <package_name>` while inside a
+project directory. Running this command will add the package as a dependency in
+the `package.json` file. This means that if you do not have a correctly
+structured `package.json` file, the install _will not work_! (Fortunately, `npm`
+has a built-in command, `npm init`, that we can use to create the `package.json`
+file. We'll learn more about it a bit later in this lesson.)
 
 ## A Little More on package.json
 
@@ -190,8 +193,8 @@ Running something like `npm install react` will add a second dependency:
 }
 ```
 
-Try it now! Following, take a look to see just how many dependencies (which
-React relies on) have been added to your `node_modules` directory.
+Try it now! Then take a look to see just how many dependencies (which React
+relies on) have been added to your `node_modules` directory.
 
 ## npm init
 
@@ -201,24 +204,18 @@ Since npm relies on a `package.json` file, it has a built in command to _build_
 specific content to include in the file. At the end, it will create a file or
 edit an existing `package.json` file.
 
-## Key Terms
-
-- **npm**: a command line tool for handling packages of reusable JavaScript code
-- **Node**: Node is a JavaScript runtime, allowing JavaScript to be run locally
-  on your computer, instead of in a browser
-
 ## Conclusion
 
 For all React lessons, we rely on npm to set up a lot of things 'under the
 hood'. The applications we build are made possible by the contributions of
 thousands of other coders before us!
 
-**Remember!** While endlessly fun, programming is a means to an end: we have a
-problem/our employer has a problem, and we give the computer instructions to
-crush the problem. If available, open, and secure code already exists do not
-hesitate to use it! Compared to physical goods, code snippets have less value
-attributed to novelty (there is a reason you won't see "artisanal code" being
-sold on [Etsy][etsy]).
+**Remember!** While endlessly fun, programming is a means to an end: we (or our
+employer) has a problem, and we give the computer instructions to crush the
+problem. If available, open, and secure code already exists do not hesitate to
+use it! Compared to physical goods, code snippets have less value attributed to
+novelty. (There is a reason you won't see "artisanal code" being sold on
+[Etsy][etsy].)
 
 ## Resources
 
