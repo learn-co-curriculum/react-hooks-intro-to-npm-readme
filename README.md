@@ -54,8 +54,8 @@ npm is automatically installed along with **Node.js**, which should already be
 installed on your system if you've worked through the JavaScript coursework. To
 confirm you have node installed, enter the following into your command line:
 
-```sh
-node -v
+```console
+$ node -v
 ```
 
 If a version appears, you have Node.js. If, by chance, you do not have Node.js
@@ -64,15 +64,15 @@ keep it up to date.
 
 You can also double check npm by running the following:
 
-```sh
-npm -v
+```console
+$ npm -v
 ```
 
 A version number should appear in your terminal. If you'd like, you can update
 npm by entering the following:
 
-```sh
-npm install --global npm
+```console
+$ npm install --global npm
 # or, for short: npm install -g npm
 ```
 
