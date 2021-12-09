@@ -85,11 +85,11 @@ with your JavaScript project directories via the command line, allowing you to
 install packages of preexisting code.
 
 What sort of code? All kinds! Some packages are quite small, like
-[`is-number`][is-number], a package that has one function: to check if a value is a
-number. Some packages are much more complicated. Huge libraries and frameworks,
-including [React][react] and [Express][express-js], are available as npm
-packages. These larger packages are often _themselves_ built using a combination
-of other packages.
+[`is-number`][is-number], a package that has one function: to check if a value
+is a number. Some packages are much more complicated. Huge libraries and
+frameworks, including [React][react] and [Express][express-js], are available as
+npm packages. These larger packages are often _themselves_ built using a
+combination of other packages.
 
 This modular design — the ability to build a package using other packages —
 allows for developers to continuously expand the JavaScript universe, creating
