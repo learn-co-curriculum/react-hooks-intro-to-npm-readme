@@ -98,8 +98,9 @@ code.
 
 ## npm install and package.json
 
-All JavaScript labs at Flatiron rely on npm packages for their tests. Many use
-the [`mocha`][mocha] npm package, which is a popular JavaScript testing framework.
+All JavaScript labs in this course rely on npm packages for their tests. Many
+use the [Mocha][mocha] or [Jest][jest] npm packages, which are popular
+JavaScript testing frameworks.
 
 The lessons themselves don't actually include all the code from these different
 packages directly in the source code. Instead, they contain a list of
@@ -223,10 +224,12 @@ novelty. (There is a reason you won't see "artisanal code" being sold on
 - [About npm](https://docs.npmjs.com/about-npm)
 
 [npmjs]: https://www.npmjs.com/
-[npm-faq]: https://www.npmjs.com/package/npm#is-npm-an-acronym-for-node-package-manager
+[npm-faq]:
+  https://www.npmjs.com/package/npm#is-npm-an-acronym-for-node-package-manager
 [nvm]: https://github.com/creationix/nvm
 [is-number]: https://www.npmjs.com/package/is-number
 [react]: https://www.npmjs.com/package/react
 [express-js]: https://expressjs.com/
 [mocha]: https://mochajs.org/
+[jest]: https://jestjs.io/
 [etsy]: https://etsy.com
