@@ -26,8 +26,8 @@ set of files full of existing, _reusable_ code. They are designed to be shared,
 allowing many web developers to use the same code in their own projects.
 
 To help organize these packages in relation to our own work, we use **npm**,
-which [may or may not be][npm-faq] short for **Node Package Manager**. In this
-lesson, we will be discussing how npm works and why it is useful.
+which is a [**package manager for Node**][npm-faq]. In this lesson, we will be
+discussing how npm works and why it is useful.
 
 ## The Value of Existing Code
 
@@ -73,16 +73,17 @@ npm by entering the following:
 
 ```console
 $ npm install --global npm
-# or, for short: npm install -g npm
 ```
+
+> Or, for short: `npm install -g npm`
 
 Okay, we've got it installed. But what is npm exactly?
 
 ## npm Introduction
 
 As mentioned, npm is a package manager for JavaScript. This means that npm works
-with your JavaScript project directories via the command line, allowing you to
-install packages of preexisting code.
+with your JavaScript projects via the command line, allowing you to install
+packages of preexisting code.
 
 What sort of code? All kinds! Some packages are quite small, like
 [`is-number`][is-number], a package that has one function: to check if a value
@@ -96,7 +97,7 @@ allows for developers to continuously expand the JavaScript universe, creating
 new, more powerful tools and applications on top of existing, tried and tested
 code.
 
-## npm install and package.json
+## Installing Packages with npm
 
 All JavaScript labs in this course rely on npm packages for their tests. Many
 use the [Mocha][mocha] or [Jest][jest] npm packages, which are popular
@@ -107,7 +108,8 @@ packages directly in the source code. Instead, they contain a list of
 _dependencies_ in a file called `package.json`.
 
 The `package.json` file tells you (and npm) what packages are required for a
-specific JavaScript application, listing out each package name.
+specific JavaScript application, listing out each package name and version
+number.
 
 When we run the command `npm install` in a directory where a `package.json` file
 is present, npm reads the names of each dependency from the `package.json` file
@@ -119,16 +121,18 @@ so on. This is what we refer to as a _dependency tree_.
 
 If you are working in a local environment, running `npm install` creates a
 folder called `node_modules`, which contains all the downloaded packages.
-_Note_: the `learn` gem may automatically run `npm install` when you first run
-`learn test`.
 
-When building a project, you may realize you _need_ some specific package. We
-can install packages by running `npm install <package_name>` while inside a
-project directory. Running this command will add the package as a dependency in
-the `package.json` file. This means that if you do not have a correctly
-structured `package.json` file, the install _will not work_! (Fortunately, `npm`
-has a built-in command, `npm init`, that we can use to create the `package.json`
-file. We'll learn more about it a bit later in this lesson.)
+> _Note_: the `learn` gem may automatically run `npm install` when you first run
+> `learn test`.
+
+When building a project, you may realize you need to _add_ some specific
+package. We can install packages by running `npm install <package_name>` while
+inside a project directory. Running this command will add the package as a
+dependency in the `package.json` file. This means that if you do not have a
+correctly structured `package.json` file, the install _will not work_!
+(Fortunately, `npm` has a built-in command, `npm init`, that we can use to
+create the `package.json` file. We'll learn more about it a bit later in this
+lesson.)
 
 ## A Little More on package.json
 
@@ -161,7 +165,7 @@ example:
     "url": "git+https://github.com/learn-co-curriculum/react-hooks-intro-to-npm-readme.git"
   },
   "author": "flatironschool",
-  "license": "ISC",
+  "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
     "url": "https://github.com/learn-co-curriculum/react-hooks-intro-to-npm-readme/issues"
   },
@@ -170,12 +174,15 @@ example:
 ```
 
 In your terminal, if you are in a directory with the above `package.json` file
-present, running `npm test` will return "hot dog." This lesson actually does
-include this `package.json` file, so try it for yourself!
+present, running `npm test` will return "hot dog."
+
+This lesson actually does include this `package.json` file, so try it for
+yourself! You can access the code for this lesson by clicking the GitHub link at
+the top, or use [this link][lesson repo].
 
 This works because the command `npm test` is saying: "Hey npm, look in
-`package.json` and find the script with the name of 'test', then execute its
-value in the terminal."
+`package.json` and find the script with the name of 'test', then execute it in
+the terminal."
 
 Having this file present also means it is possible to install additional
 packages. There is one dependency already included:
@@ -186,10 +193,11 @@ packages. There is one dependency already included:
 }
 ```
 
-Running something like `npm install react` will add a second dependency:
+Running `npm install react` will add a second dependency:
 
 ```json
 "dependencies": {
+  "is-number": "^7.0.0",
   "react": "^17.0.2"
 }
 ```
@@ -197,7 +205,7 @@ Running something like `npm install react` will add a second dependency:
 Try it now! Then take a look to see just how many dependencies (which React
 relies on) have been added to your `node_modules` directory.
 
-## npm init
+## Initializing New Projects with npm
 
 Since npm relies on a `package.json` file, it has a built in command to _build_
 `package.json` files. When you're creating a new project from scratch, running
@@ -233,3 +241,5 @@ novelty. (There is a reason you won't see "artisanal code" being sold on
 [mocha]: https://mochajs.org/
 [jest]: https://jestjs.io/
 [etsy]: https://etsy.com
+[lesson repo]:
+  https://github.com/learn-co-curriculum/react-hooks-intro-to-npm-readme
