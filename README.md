@@ -122,9 +122,6 @@ so on. This is what we refer to as a _dependency tree_.
 If you are working in a local environment, running `npm install` creates a
 folder called `node_modules`, which contains all the downloaded packages.
 
-> _Note_: the `learn` gem may automatically run `npm install` when you first run
-> `learn test`.
-
 When building a project, you may realize you need to _add_ some specific
 package. We can install packages by running `npm install <package_name>` while
 inside a project directory. Running this command will add the package as a
